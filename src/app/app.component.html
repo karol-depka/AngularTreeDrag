@@ -1,0 +1,17 @@
+
+  <div class="container">
+    <h1>{{title}}</h1>
+    <ul class="list-group drag-drop-items">
+      <li *ngFor="let task of tasks" class="list-group-item">
+        <button class="ellipse-around"><i class="fa fa-ellipsis-v"></i></button>
+        <div class="row dragging-list-item">
+          <div class="col-xs-10">
+            <textarea class="text-editting-mode mode-on flexable_textarea" row="1" type="text">{{ task.text }}</textarea>
+          </div>
+          <div class="col-xs-1"></div>
+          <div class="col-xs-1"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
