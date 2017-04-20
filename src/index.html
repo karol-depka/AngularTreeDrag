@@ -15,6 +15,13 @@
 <body>
   <app-root>Loading...</app-root>
 
+  <!--<script src="node_modules/angular-tree-component/dist/angular-tree-component.js"></script>-->
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('app').catch(function(err){ console.error(err);  });
+  </script>
+  <!-- jquery plugins -->
   <script src="src/assets/js/jquery.flexText.min.js"></script>
 </body>
 </html>
