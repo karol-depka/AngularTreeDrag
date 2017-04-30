@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body .node-content-wrapper{
+  width: 100%;
+}
+.node-drop-slot.is-dragging-over{
+  background-color: #337ab7!important;
+  height:2px!important;
+  border:none!important;
+}
+
+.node-content-wrapper.is-dragging-over{
+  background-color: #337ab7!important;
+}

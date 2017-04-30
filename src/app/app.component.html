@@ -16,14 +16,18 @@
 
     <div class="list-group drag-drop-items">
       <tree-root #tree [nodes]="nodes"
+                 (onMoveNode)="onMoveNode($event)"
                  [options]="options">
         <template #treeNodeTemplate let-node="node" let-index="index">
           <div class="list-group-item">
             <button class="ellipse-around"><i class="fa fa-ellipsis-v"></i></button>
             <div class="row dragging-list-item">
               <div class="col-xs-10">
-                <textarea  [(ngModel)]="node.data.name"
-                  class="text-editting-mode mode-on flexable_textarea" row="1" type="text"></textarea>
+                <textarea
+                  autosize
+                  pInputTextarea autoResize="autoResize"
+                  [(ngModel)]="node.data.name"
+                  class="text-editting-mode mode-on" row="0" type="text"></textarea>
               </div>
               <div class="col-xs-1"></div>
               <div class="col-xs-1"></div>
