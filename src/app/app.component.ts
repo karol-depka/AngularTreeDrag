@@ -29,6 +29,19 @@ export class AppComponent {
     {
       id: 4,
       name: 'Second item',
+    },
+    {
+      id: 5,
+      name: 'Another item',
+    },
+    {
+      id: 6,
+      name: 'Very very long text. Very very long text. Very very long text. Very very long text. Very very long text.' +
+      'Very very long text. Very very long text. Very very long text.'
+    },
+    {
+      id: 7,
+      name: 'Somewhat long text. Somewhat long text.',
     }
   ];
 
